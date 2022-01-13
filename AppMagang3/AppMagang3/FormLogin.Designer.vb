@@ -30,9 +30,12 @@ Partial Class FormLogin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -94,9 +97,10 @@ Partial Class FormLogin
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(69, 294)
+        Me.Button1.Location = New System.Drawing.Point(69, 318)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(227, 33)
         Me.Button1.TabIndex = 4
@@ -105,14 +109,32 @@ Partial Class FormLogin
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(339, 6)
+        Me.Button2.Location = New System.Drawing.Point(342, 6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(19, 23)
+        Me.Button2.Size = New System.Drawing.Size(16, 17)
         Me.Button2.TabIndex = 5
-        Me.Button2.Text = "X"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.ComboBox1)
+        Me.Panel3.Location = New System.Drawing.Point(69, 276)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(226, 23)
+        Me.Panel3.TabIndex = 6
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Admin", "Dosen", "Mahasiswa"})
+        Me.ComboBox1.Location = New System.Drawing.Point(0, 0)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(226, 21)
+        Me.ComboBox1.TabIndex = 0
         '
         'FormLogin
         '
@@ -120,6 +142,7 @@ Partial Class FormLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(231, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(364, 404)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -134,6 +157,7 @@ Partial Class FormLogin
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -146,5 +170,7 @@ Partial Class FormLogin
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
