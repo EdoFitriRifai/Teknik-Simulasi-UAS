@@ -84,16 +84,34 @@
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HalamanBerkasMasuk.Designer.vb">
+      <DependentUpon>HalamanBerkasMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanBerkasMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanDashboard.Designer.vb">
+      <DependentUpon>HalamanDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanDataMahasiswa.Designer.vb">
+      <DependentUpon>HalamanDataMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanDataMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanDataMahasiswaAdmin.Designer.vb">
+      <DependentUpon>HalamanDataMahasiswaAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanDataMahasiswaAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HalamanFormulirMagang.Designer.vb">
       <DependentUpon>HalamanFormulirMagang.vb</DependentUpon>
     </Compile>
     <Compile Include="HalamanFormulirMagang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HalamanMahsiswaBM.Designer.vb">
-      <DependentUpon>HalamanMahsiswaBM.vb</DependentUpon>
-    </Compile>
-    <Compile Include="HalamanMahsiswaBM.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HalamanStatusPemohonan.Designer.vb">
@@ -126,11 +144,20 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HalamanBerkasMasuk.resx">
+      <DependentUpon>HalamanBerkasMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanDashboard.resx">
+      <DependentUpon>HalamanDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanDataMahasiswa.resx">
+      <DependentUpon>HalamanDataMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanDataMahasiswaAdmin.resx">
+      <DependentUpon>HalamanDataMahasiswaAdmin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HalamanFormulirMagang.resx">
       <DependentUpon>HalamanFormulirMagang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HalamanMahsiswaBM.resx">
-      <DependentUpon>HalamanMahsiswaBM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HalamanStatusPemohonan.resx">
       <DependentUpon>HalamanStatusPemohonan.vb</DependentUpon>

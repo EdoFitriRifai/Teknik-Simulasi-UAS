@@ -22,58 +22,36 @@ Partial Class HalamanStatusPemohonan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.idformuli = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tanggal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.status = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.durasimagang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lv = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
-        'Panel1
+        'lv
         '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(776, 100)
-        Me.Panel1.TabIndex = 0
+        Me.lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
+        Me.lv.Location = New System.Drawing.Point(45, 34)
+        Me.lv.Name = "lv"
+        Me.lv.Size = New System.Drawing.Size(383, 208)
+        Me.lv.TabIndex = 0
+        Me.lv.UseCompatibleStateImageBehavior = False
+        Me.lv.View = System.Windows.Forms.View.Details
         '
-        'DataGridView1
+        'ColumnHeader1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.idformuli, Me.tanggal, Me.status, Me.durasimagang})
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 100)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(776, 254)
-        Me.DataGridView1.TabIndex = 1
+        Me.ColumnHeader1.Text = "ID Daftar"
+        Me.ColumnHeader1.Width = 95
         '
-        'no
+        'ColumnHeader2
         '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
+        Me.ColumnHeader2.Text = "Tanggal Daftar"
+        Me.ColumnHeader2.Width = 99
         '
-        'idformuli
+        'ColumnHeader3
         '
-        Me.idformuli.HeaderText = "ID Formulir"
-        Me.idformuli.Name = "idformuli"
-        '
-        'tanggal
-        '
-        Me.tanggal.HeaderText = "Tanggal"
-        Me.tanggal.Name = "tanggal"
-        '
-        'status
-        '
-        Me.status.HeaderText = "Status"
-        Me.status.Name = "status"
-        '
-        'durasimagang
-        '
-        Me.durasimagang.HeaderText = "Durasi Magang"
-        Me.durasimagang.Name = "durasimagang"
+        Me.ColumnHeader3.Text = "Status"
+        Me.ColumnHeader3.Width = 90
         '
         'HalamanStatusPemohonan
         '
@@ -81,19 +59,15 @@ Partial Class HalamanStatusPemohonan
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(776, 488)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lv)
         Me.Name = "HalamanStatusPemohonan"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "HalamanStatusPemohonan"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents no As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents idformuli As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents tanggal As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents status As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents durasimagang As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents lv As System.Windows.Forms.ListView
+    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
 End Class

@@ -24,51 +24,57 @@ Partial Class FormHome
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.btnformulir = New System.Windows.Forms.Button()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.panelstatus = New System.Windows.Forms.Panel()
+        Me.panelinputberkas = New System.Windows.Forms.Panel()
+        Me.paneldatamahasiswa = New System.Windows.Forms.Panel()
+        Me.panelberkasmasuk = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.btndashboard = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblnama = New System.Windows.Forms.Label()
         Me.lbljabatan = New System.Windows.Forms.Label()
         Me.lblnpm = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lbltitle = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.btnclose = New System.Windows.Forms.Button()
-        Me.paneltampil = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.panelUtama = New System.Windows.Forms.Panel()
+        Me.paneldatamahasiswaadmin = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnberkasmasuk = New System.Windows.Forms.Button()
+        Me.btndatamahasiswa = New System.Windows.Forms.Button()
+        Me.btnformulir = New System.Windows.Forms.Button()
+        Me.btnstatus = New System.Windows.Forms.Button()
+        Me.btndatamahasiswaadmin = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        Me.Panel11.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelstatus.SuspendLayout()
+        Me.panelinputberkas.SuspendLayout()
+        Me.paneldatamahasiswa.SuspendLayout()
+        Me.panelberkasmasuk.SuspendLayout()
         Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.paneldatamahasiswaadmin.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -86,10 +92,11 @@ Partial Class FormHome
         '
         'Panel7
         '
-        Me.Panel7.Controls.Add(Me.Panel3)
-        Me.Panel7.Controls.Add(Me.Panel11)
-        Me.Panel7.Controls.Add(Me.Panel10)
-        Me.Panel7.Controls.Add(Me.Panel9)
+        Me.Panel7.Controls.Add(Me.paneldatamahasiswaadmin)
+        Me.Panel7.Controls.Add(Me.panelstatus)
+        Me.Panel7.Controls.Add(Me.panelinputberkas)
+        Me.Panel7.Controls.Add(Me.paneldatamahasiswa)
+        Me.Panel7.Controls.Add(Me.panelberkasmasuk)
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 166)
@@ -97,96 +104,49 @@ Partial Class FormHome
         Me.Panel7.Size = New System.Drawing.Size(212, 299)
         Me.Panel7.TabIndex = 3
         '
-        'Panel11
+        'panelstatus
         '
-        Me.Panel11.Controls.Add(Me.btnformulir)
-        Me.Panel11.Controls.Add(Me.PictureBox7)
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel11.Location = New System.Drawing.Point(0, 81)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(212, 27)
-        Me.Panel11.TabIndex = 9
+        Me.panelstatus.Controls.Add(Me.btnstatus)
+        Me.panelstatus.Controls.Add(Me.PictureBox2)
+        Me.panelstatus.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelstatus.Location = New System.Drawing.Point(0, 108)
+        Me.panelstatus.Name = "panelstatus"
+        Me.panelstatus.Size = New System.Drawing.Size(212, 27)
+        Me.panelstatus.TabIndex = 10
         '
-        'btnformulir
+        'panelinputberkas
         '
-        Me.btnformulir.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnformulir.FlatAppearance.BorderSize = 0
-        Me.btnformulir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnformulir.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnformulir.ForeColor = System.Drawing.Color.White
-        Me.btnformulir.Location = New System.Drawing.Point(43, 0)
-        Me.btnformulir.Name = "btnformulir"
-        Me.btnformulir.Size = New System.Drawing.Size(169, 27)
-        Me.btnformulir.TabIndex = 3
-        Me.btnformulir.Text = "INPUT BERKAS"
-        Me.btnformulir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnformulir.UseVisualStyleBackColor = True
+        Me.panelinputberkas.Controls.Add(Me.btnformulir)
+        Me.panelinputberkas.Controls.Add(Me.PictureBox7)
+        Me.panelinputberkas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelinputberkas.Location = New System.Drawing.Point(0, 81)
+        Me.panelinputberkas.Name = "panelinputberkas"
+        Me.panelinputberkas.Size = New System.Drawing.Size(212, 27)
+        Me.panelinputberkas.TabIndex = 9
         '
-        'PictureBox7
+        'paneldatamahasiswa
         '
-        Me.PictureBox7.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox7.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(43, 27)
-        Me.PictureBox7.TabIndex = 0
-        Me.PictureBox7.TabStop = False
+        Me.paneldatamahasiswa.Controls.Add(Me.btndatamahasiswa)
+        Me.paneldatamahasiswa.Controls.Add(Me.PictureBox6)
+        Me.paneldatamahasiswa.Dock = System.Windows.Forms.DockStyle.Top
+        Me.paneldatamahasiswa.Location = New System.Drawing.Point(0, 54)
+        Me.paneldatamahasiswa.Name = "paneldatamahasiswa"
+        Me.paneldatamahasiswa.Size = New System.Drawing.Size(212, 27)
+        Me.paneldatamahasiswa.TabIndex = 8
         '
-        'Panel10
+        'panelberkasmasuk
         '
-        Me.Panel10.Controls.Add(Me.Button3)
-        Me.Panel10.Controls.Add(Me.PictureBox6)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 54)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(212, 27)
-        Me.Panel10.TabIndex = 8
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(43, 27)
-        Me.PictureBox6.TabIndex = 0
-        Me.PictureBox6.TabStop = False
-        '
-        'Panel9
-        '
-        Me.Panel9.Controls.Add(Me.Button2)
-        Me.Panel9.Controls.Add(Me.PictureBox5)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel9.Location = New System.Drawing.Point(0, 27)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(212, 27)
-        Me.Panel9.TabIndex = 7
-        '
-        'Button2
-        '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(43, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(169, 27)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "BERKAS MASUK"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(43, 27)
-        Me.PictureBox5.TabIndex = 0
-        Me.PictureBox5.TabStop = False
+        Me.panelberkasmasuk.Controls.Add(Me.btnberkasmasuk)
+        Me.panelberkasmasuk.Controls.Add(Me.PictureBox5)
+        Me.panelberkasmasuk.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelberkasmasuk.Location = New System.Drawing.Point(0, 27)
+        Me.panelberkasmasuk.Name = "panelberkasmasuk"
+        Me.panelberkasmasuk.Size = New System.Drawing.Size(212, 27)
+        Me.panelberkasmasuk.TabIndex = 7
         '
         'Panel8
         '
-        Me.Panel8.Controls.Add(Me.Button1)
+        Me.Panel8.Controls.Add(Me.btndashboard)
         Me.Panel8.Controls.Add(Me.PictureBox4)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
@@ -194,29 +154,20 @@ Partial Class FormHome
         Me.Panel8.Size = New System.Drawing.Size(212, 27)
         Me.Panel8.TabIndex = 6
         '
-        'Button1
+        'btndashboard
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(43, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(169, 27)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "HOME"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(43, 27)
-        Me.PictureBox4.TabIndex = 0
-        Me.PictureBox4.TabStop = False
+        Me.btndashboard.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btndashboard.FlatAppearance.BorderSize = 0
+        Me.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndashboard.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndashboard.ForeColor = System.Drawing.Color.White
+        Me.btndashboard.Location = New System.Drawing.Point(43, 0)
+        Me.btndashboard.Name = "btndashboard"
+        Me.btndashboard.Size = New System.Drawing.Size(169, 27)
+        Me.btndashboard.TabIndex = 1
+        Me.btndashboard.Text = "Dashboard"
+        Me.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btndashboard.UseVisualStyleBackColor = True
         '
         'Panel6
         '
@@ -227,32 +178,6 @@ Partial Class FormHome
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(212, 30)
         Me.Panel6.TabIndex = 2
-        '
-        'Button5
-        '
-        Me.Button5.BackgroundImage = Global.AppMagang3.My.Resources.Resources.Setting1
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(182, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(30, 30)
-        Me.Button5.TabIndex = 3
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.BackgroundImage = Global.AppMagang3.My.Resources.Resources.Setting1
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(0, 0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(30, 30)
-        Me.Button4.TabIndex = 2
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -313,34 +238,38 @@ Partial Class FormHome
         Me.lblnpm.Text = "Alamat"
         Me.lblnpm.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.AppMagang3.My.Resources.Resources.admin1
-        Me.PictureBox1.Location = New System.Drawing.Point(68, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(79, 53)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(162, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(254, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.lbltitle)
         Me.Panel2.Controls.Add(Me.Button8)
         Me.Panel2.Controls.Add(Me.Button7)
         Me.Panel2.Controls.Add(Me.btnclose)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(212, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(581, 44)
+        Me.Panel2.Size = New System.Drawing.Size(760, 44)
         Me.Panel2.TabIndex = 1
+        '
+        'lbltitle
+        '
+        Me.lbltitle.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lbltitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lbltitle.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltitle.ForeColor = System.Drawing.Color.White
+        Me.lbltitle.Location = New System.Drawing.Point(0, 0)
+        Me.lbltitle.Name = "lbltitle"
+        Me.lbltitle.Size = New System.Drawing.Size(212, 44)
+        Me.lbltitle.TabIndex = 4
+        Me.lbltitle.Text = "Nama"
+        Me.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.Lime
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(524, 12)
+        Me.Button8.Location = New System.Drawing.Point(703, 12)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(11, 14)
         Me.Button8.TabIndex = 2
@@ -351,7 +280,7 @@ Partial Class FormHome
         Me.Button7.BackColor = System.Drawing.Color.Yellow
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(541, 12)
+        Me.Button7.Location = New System.Drawing.Point(720, 12)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(11, 14)
         Me.Button7.TabIndex = 1
@@ -362,45 +291,39 @@ Partial Class FormHome
         Me.btnclose.BackColor = System.Drawing.Color.Red
         Me.btnclose.FlatAppearance.BorderSize = 0
         Me.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnclose.Location = New System.Drawing.Point(558, 12)
+        Me.btnclose.Location = New System.Drawing.Point(737, 12)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(11, 14)
         Me.btnclose.TabIndex = 0
         Me.btnclose.UseVisualStyleBackColor = False
         '
-        'paneltampil
+        'panelUtama
         '
-        Me.paneltampil.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.paneltampil.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.paneltampil.Location = New System.Drawing.Point(212, 44)
-        Me.paneltampil.Name = "paneltampil"
-        Me.paneltampil.Size = New System.Drawing.Size(581, 451)
-        Me.paneltampil.TabIndex = 2
+        Me.panelUtama.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.panelUtama.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelUtama.Location = New System.Drawing.Point(212, 44)
+        Me.panelUtama.Name = "panelUtama"
+        Me.panelUtama.Size = New System.Drawing.Size(760, 451)
+        Me.panelUtama.TabIndex = 2
         '
-        'Button3
+        'paneldatamahasiswaadmin
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(43, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(169, 27)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "BERKAS KELUAR"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.paneldatamahasiswaadmin.Controls.Add(Me.btndatamahasiswaadmin)
+        Me.paneldatamahasiswaadmin.Controls.Add(Me.PictureBox3)
+        Me.paneldatamahasiswaadmin.Dock = System.Windows.Forms.DockStyle.Top
+        Me.paneldatamahasiswaadmin.Location = New System.Drawing.Point(0, 135)
+        Me.paneldatamahasiswaadmin.Name = "paneldatamahasiswaadmin"
+        Me.paneldatamahasiswaadmin.Size = New System.Drawing.Size(212, 27)
+        Me.paneldatamahasiswaadmin.TabIndex = 11
         '
-        'Panel3
+        'PictureBox3
         '
-        Me.Panel3.Controls.Add(Me.Button6)
-        Me.Panel3.Controls.Add(Me.PictureBox2)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 108)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(212, 27)
-        Me.Panel3.TabIndex = 10
+        Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(43, 27)
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
         '
         'PictureBox2
         '
@@ -411,27 +334,159 @@ Partial Class FormHome
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
         '
-        'Button6
+        'PictureBox7
         '
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(43, 0)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(169, 27)
-        Me.Button6.TabIndex = 3
-        Me.Button6.Text = "Status Pemohonan"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.PictureBox7.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox7.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(43, 27)
+        Me.PictureBox7.TabIndex = 0
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(43, 27)
+        Me.PictureBox6.TabIndex = 0
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(43, 27)
+        Me.PictureBox5.TabIndex = 0
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(43, 27)
+        Me.PictureBox4.TabIndex = 0
+        Me.PictureBox4.TabStop = False
+        '
+        'Button5
+        '
+        Me.Button5.BackgroundImage = Global.AppMagang3.My.Resources.Resources.Setting1
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(182, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(30, 30)
+        Me.Button5.TabIndex = 3
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.BackgroundImage = Global.AppMagang3.My.Resources.Resources.Setting1
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(0, 0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(30, 30)
+        Me.Button4.TabIndex = 2
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.AppMagang3.My.Resources.Resources.admin1
+        Me.PictureBox1.Location = New System.Drawing.Point(68, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(79, 53)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'btnberkasmasuk
+        '
+        Me.btnberkasmasuk.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnberkasmasuk.FlatAppearance.BorderSize = 0
+        Me.btnberkasmasuk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnberkasmasuk.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnberkasmasuk.ForeColor = System.Drawing.Color.White
+        Me.btnberkasmasuk.Location = New System.Drawing.Point(43, 0)
+        Me.btnberkasmasuk.Name = "btnberkasmasuk"
+        Me.btnberkasmasuk.Size = New System.Drawing.Size(169, 27)
+        Me.btnberkasmasuk.TabIndex = 3
+        Me.btnberkasmasuk.Text = "Berkas Masuk"
+        Me.btnberkasmasuk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnberkasmasuk.UseVisualStyleBackColor = True
+        '
+        'btndatamahasiswa
+        '
+        Me.btndatamahasiswa.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btndatamahasiswa.FlatAppearance.BorderSize = 0
+        Me.btndatamahasiswa.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndatamahasiswa.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndatamahasiswa.ForeColor = System.Drawing.Color.White
+        Me.btndatamahasiswa.Location = New System.Drawing.Point(43, 0)
+        Me.btndatamahasiswa.Name = "btndatamahasiswa"
+        Me.btndatamahasiswa.Size = New System.Drawing.Size(169, 27)
+        Me.btndatamahasiswa.TabIndex = 3
+        Me.btndatamahasiswa.Text = "Data Mahasiswa"
+        Me.btndatamahasiswa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btndatamahasiswa.UseVisualStyleBackColor = True
+        '
+        'btnformulir
+        '
+        Me.btnformulir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnformulir.FlatAppearance.BorderSize = 0
+        Me.btnformulir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnformulir.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnformulir.ForeColor = System.Drawing.Color.White
+        Me.btnformulir.Location = New System.Drawing.Point(43, 0)
+        Me.btnformulir.Name = "btnformulir"
+        Me.btnformulir.Size = New System.Drawing.Size(169, 27)
+        Me.btnformulir.TabIndex = 4
+        Me.btnformulir.Text = "Input Berkas"
+        Me.btnformulir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnformulir.UseVisualStyleBackColor = True
+        '
+        'btnstatus
+        '
+        Me.btnstatus.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnstatus.FlatAppearance.BorderSize = 0
+        Me.btnstatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnstatus.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnstatus.ForeColor = System.Drawing.Color.White
+        Me.btnstatus.Location = New System.Drawing.Point(43, 0)
+        Me.btnstatus.Name = "btnstatus"
+        Me.btnstatus.Size = New System.Drawing.Size(169, 27)
+        Me.btnstatus.TabIndex = 4
+        Me.btnstatus.Text = "Status Pemohonan"
+        Me.btnstatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnstatus.UseVisualStyleBackColor = True
+        '
+        'btndatamahasiswaadmin
+        '
+        Me.btndatamahasiswaadmin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btndatamahasiswaadmin.FlatAppearance.BorderSize = 0
+        Me.btndatamahasiswaadmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndatamahasiswaadmin.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndatamahasiswaadmin.ForeColor = System.Drawing.Color.White
+        Me.btndatamahasiswaadmin.Location = New System.Drawing.Point(43, 0)
+        Me.btndatamahasiswaadmin.Name = "btndatamahasiswaadmin"
+        Me.btndatamahasiswaadmin.Size = New System.Drawing.Size(169, 27)
+        Me.btndatamahasiswaadmin.TabIndex = 4
+        Me.btndatamahasiswaadmin.Text = "Data Mahasiswa"
+        Me.btndatamahasiswaadmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btndatamahasiswaadmin.UseVisualStyleBackColor = True
         '
         'FormHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(793, 495)
-        Me.Controls.Add(Me.paneltampil)
+        Me.ClientSize = New System.Drawing.Size(972, 495)
+        Me.Controls.Add(Me.panelUtama)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FormHome"
@@ -439,26 +494,28 @@ Partial Class FormHome
         Me.Text = "FormHome"
         Me.Panel1.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
-        Me.Panel11.ResumeLayout(False)
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel10.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelstatus.ResumeLayout(False)
+        Me.panelinputberkas.ResumeLayout(False)
+        Me.paneldatamahasiswa.ResumeLayout(False)
+        Me.panelberkasmasuk.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
+        Me.paneldatamahasiswaadmin.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents paneltampil As System.Windows.Forms.Panel
+    Friend WithEvents panelUtama As System.Windows.Forms.Panel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents lblnama As System.Windows.Forms.Label
@@ -466,25 +523,29 @@ Partial Class FormHome
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents Panel11 As System.Windows.Forms.Panel
+    Friend WithEvents panelinputberkas As System.Windows.Forms.Panel
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel10 As System.Windows.Forms.Panel
+    Friend WithEvents paneldatamahasiswa As System.Windows.Forms.Panel
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents panelberkasmasuk As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btndashboard As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents btnclose As System.Windows.Forms.Button
     Friend WithEvents lblnpm As System.Windows.Forms.Label
-    Friend WithEvents btnformulir As System.Windows.Forms.Button
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents panelstatus As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents lbltitle As System.Windows.Forms.Label
+    Friend WithEvents paneldatamahasiswaadmin As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnberkasmasuk As System.Windows.Forms.Button
+    Friend WithEvents btndatamahasiswa As System.Windows.Forms.Button
+    Friend WithEvents btnformulir As System.Windows.Forms.Button
+    Friend WithEvents btnstatus As System.Windows.Forms.Button
+    Friend WithEvents btndatamahasiswaadmin As System.Windows.Forms.Button
 End Class
