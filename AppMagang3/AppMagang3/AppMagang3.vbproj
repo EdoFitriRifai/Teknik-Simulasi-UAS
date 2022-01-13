@@ -96,6 +96,12 @@
     <Compile Include="HalamanMahsiswaBM.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HalamanStatusPemohonan.Designer.vb">
+      <DependentUpon>HalamanStatusPemohonan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanStatusPemohonan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="konek.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HalamanMahsiswaBM.resx">
       <DependentUpon>HalamanMahsiswaBM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanStatusPemohonan.resx">
+      <DependentUpon>HalamanStatusPemohonan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

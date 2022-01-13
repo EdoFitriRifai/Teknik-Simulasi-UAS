@@ -19,4 +19,8 @@
     Private Sub btnformulir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnformulir.Click
         HalamanFormulirMagang.Show()
     End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+
+    End Sub
 End Class
