@@ -22,9 +22,8 @@ Public Class FormLogin
         cmd = New OdbcCommand("select * from tbadmin where namaAdmin='" & txtuser.Text & "' and pwAdmin='" & txtpass.Text & "'", conn)
         dr = cmd.ExecuteReader
         dr.Read()
-        FormHome.lblnpm.Text = dr("idAdmin")
         If dr.HasRows Then
-            If dr("level") = "Admin" Then
+            If dr("level") = "admin" Then
                 FormHome.lblnama.Text = dr("namaAdmin")
                 FormHome.lbljabatan.Text = dr("level")
             ElseIf dr("level") = "Dosen" Then
@@ -37,6 +36,7 @@ Public Class FormLogin
                 bersih()
             End If
             MessageBox.Show("Login Berhasil, Selamat datang " + dr("namaAdmin").ToString + "!")
+            FormHome.lblnpm.Text = dr("idAdmin")
             Me.Hide()
             FormHome.Show()
         Else
