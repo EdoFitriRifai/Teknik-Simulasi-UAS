@@ -11,4 +11,12 @@
     Private Sub lbl_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblnpm.Click
 
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        HalamanMahsiswaBM.Show()
+    End Sub
+
+    Private Sub btnformulir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnformulir.Click
+        HalamanFormulirMagang.Show()
+    End Sub
 End Class
