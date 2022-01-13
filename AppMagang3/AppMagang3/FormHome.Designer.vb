@@ -40,15 +40,15 @@ Partial Class FormHome
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblnama = New System.Windows.Forms.Label()
+        Me.lbljabatan = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnclose = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnclose = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lblnpm = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel11.SuspendLayout()
@@ -256,9 +256,9 @@ Partial Class FormHome
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.Label1)
+        Me.Panel4.Controls.Add(Me.lblnama)
+        Me.Panel4.Controls.Add(Me.lbljabatan)
+        Me.Panel4.Controls.Add(Me.lblnpm)
         Me.Panel4.Controls.Add(Me.PictureBox1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
@@ -266,44 +266,31 @@ Partial Class FormHome
         Me.Panel4.Size = New System.Drawing.Size(212, 123)
         Me.Panel4.TabIndex = 0
         '
-        'Label3
+        'lblnama
         '
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label3.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(0, 72)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(212, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Nama"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblnama.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lblnama.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblnama.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnama.ForeColor = System.Drawing.Color.White
+        Me.lblnama.Location = New System.Drawing.Point(0, 72)
+        Me.lblnama.Name = "lblnama"
+        Me.lblnama.Size = New System.Drawing.Size(212, 17)
+        Me.lblnama.TabIndex = 3
+        Me.lblnama.Text = "Nama"
+        Me.lblnama.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label2
+        'lbljabatan
         '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(0, 89)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(212, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Jabatan"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label1
-        '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 106)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(212, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Alamat"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lbljabatan.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lbljabatan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lbljabatan.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbljabatan.ForeColor = System.Drawing.Color.White
+        Me.lbljabatan.Location = New System.Drawing.Point(0, 89)
+        Me.lbljabatan.Name = "lbljabatan"
+        Me.lbljabatan.Size = New System.Drawing.Size(212, 17)
+        Me.lbljabatan.TabIndex = 2
+        Me.lbljabatan.Text = "Jabatan"
+        Me.lbljabatan.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'PictureBox1
         '
@@ -327,25 +314,16 @@ Partial Class FormHome
         Me.Panel2.Size = New System.Drawing.Size(581, 44)
         Me.Panel2.TabIndex = 1
         '
-        'Panel3
+        'Button8
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(212, 44)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(581, 451)
-        Me.Panel3.TabIndex = 2
-        '
-        'btnclose
-        '
-        Me.btnclose.BackColor = System.Drawing.Color.Red
-        Me.btnclose.FlatAppearance.BorderSize = 0
-        Me.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnclose.Location = New System.Drawing.Point(558, 12)
-        Me.btnclose.Name = "btnclose"
-        Me.btnclose.Size = New System.Drawing.Size(11, 14)
-        Me.btnclose.TabIndex = 0
-        Me.btnclose.UseVisualStyleBackColor = False
+        Me.Button8.BackColor = System.Drawing.Color.Lime
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(524, 12)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(11, 14)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -358,16 +336,38 @@ Partial Class FormHome
         Me.Button7.TabIndex = 1
         Me.Button7.UseVisualStyleBackColor = False
         '
-        'Button8
+        'btnclose
         '
-        Me.Button8.BackColor = System.Drawing.Color.Lime
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(524, 12)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(11, 14)
-        Me.Button8.TabIndex = 2
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btnclose.BackColor = System.Drawing.Color.Red
+        Me.btnclose.FlatAppearance.BorderSize = 0
+        Me.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnclose.Location = New System.Drawing.Point(558, 12)
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.Size = New System.Drawing.Size(11, 14)
+        Me.btnclose.TabIndex = 0
+        Me.btnclose.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(212, 44)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(581, 451)
+        Me.Panel3.TabIndex = 2
+        '
+        'lblnpm
+        '
+        Me.lblnpm.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lblnpm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblnpm.Font = New System.Drawing.Font("Candara", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblnpm.ForeColor = System.Drawing.Color.White
+        Me.lblnpm.Location = New System.Drawing.Point(0, 106)
+        Me.lblnpm.Name = "lblnpm"
+        Me.lblnpm.Size = New System.Drawing.Size(212, 17)
+        Me.lblnpm.TabIndex = 1
+        Me.lblnpm.Text = "Alamat"
+        Me.lblnpm.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'FormHome
         '
@@ -402,9 +402,8 @@ Partial Class FormHome
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblnama As System.Windows.Forms.Label
+    Friend WithEvents lbljabatan As System.Windows.Forms.Label
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
@@ -424,4 +423,5 @@ Partial Class FormHome
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents btnclose As System.Windows.Forms.Button
+    Friend WithEvents lblnpm As System.Windows.Forms.Label
 End Class

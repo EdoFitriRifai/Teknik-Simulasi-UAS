@@ -7,4 +7,8 @@
     Private Sub btnclose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnclose.Click
         Close()
     End Sub
+
+    Private Sub lbl_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblnpm.Click
+
+    End Sub
 End Class

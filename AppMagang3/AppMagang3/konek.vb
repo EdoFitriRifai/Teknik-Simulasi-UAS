@@ -10,7 +10,7 @@ Module konek
 
     Public Sub koneksi()
         Dim str As String
-        str = "Driver={MySQL ODBC 8.0 ANSI Driver};database=koneksi_appmagang3;server=localhost;uid=root"
+        str = "Driver={MySQL ODBC 8.0 ANSI Driver};database=dbappmagang3;server=localhost;uid=root"
         conn = New OdbcConnection(str)
         If conn.State = ConnectionState.Closed Then
             conn.Open()
