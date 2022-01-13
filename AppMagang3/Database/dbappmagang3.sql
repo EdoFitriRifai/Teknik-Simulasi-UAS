@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Jan 2022 pada 15.56
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 8.0.10
+-- Generation Time: Jan 13, 2022 at 05:01 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbldosen`
+-- Table structure for table `tbldosen`
 --
 
 CREATE TABLE `tbldosen` (
@@ -36,7 +36,7 @@ CREATE TABLE `tbldosen` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tblmahasiswa`
+-- Table structure for table `tblmahasiswa`
 --
 
 CREATE TABLE `tblmahasiswa` (
@@ -49,10 +49,17 @@ CREATE TABLE `tblmahasiswa` (
   `tahunMasuk` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tblmahasiswa`
+--
+
+INSERT INTO `tblmahasiswa` (`npm`, `namaMahasiswa`, `tempatLahir`, `tanggalLahir`, `fakultas`, `jurusan`, `tahunMasuk`) VALUES
+(1101181109, 'Aska Erlangga', 'Serang', '2000-01-01', 'Ilmu Komputer', 'Teknik Informatika', '2018-01-01');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_formulir`
+-- Table structure for table `tbl_formulir`
 --
 
 CREATE TABLE `tbl_formulir` (
@@ -64,10 +71,18 @@ CREATE TABLE `tbl_formulir` (
   `npm` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tbl_formulir`
+--
+
+INSERT INTO `tbl_formulir` (`idDaftar`, `tglDaftar`, `namaTempatMagang`, `durasiMagang`, `alamatTempatMagang`, `npm`) VALUES
+(1, '2022-01-13', 'Bappeda', '30', 'Serang', 1101181109),
+(2, '2022-01-13', 'Diskominfo', '30', 'Serang', 1101181112);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_user`
+-- Table structure for table `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -79,33 +94,45 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbl_user`
+-- Dumping data for table `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`idUser`, `namaUser`, `pwUser`, `jenisUser`, `nama`) VALUES
-(1101181112, 'edofr', '123456', 'Admin', 'Edo Fitri Rifai');
+(1101181112, 'edofr', '123456', 'Admin', 'Edo Fitri Rifai'),
+(1, 'askaerlangga', '12345678', 'Mahasiswa', 'Aska Erlangga'),
+(2, 'admin', 'admin', 'Admin', 'Admin');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tbldosen`
+-- Indexes for table `tbldosen`
 --
 ALTER TABLE `tbldosen`
   ADD PRIMARY KEY (`nidn`);
 
 --
--- Indeks untuk tabel `tblmahasiswa`
+-- Indexes for table `tblmahasiswa`
 --
 ALTER TABLE `tblmahasiswa`
   ADD PRIMARY KEY (`npm`);
 
 --
--- Indeks untuk tabel `tbl_formulir`
+-- Indexes for table `tbl_formulir`
 --
 ALTER TABLE `tbl_formulir`
   ADD PRIMARY KEY (`idDaftar`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_formulir`
+--
+ALTER TABLE `tbl_formulir`
+  MODIFY `idDaftar` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
